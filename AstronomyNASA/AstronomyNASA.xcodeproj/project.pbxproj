@@ -18,6 +18,7 @@
 		94D305C22992561F00311DB6 /* PODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C12992561F00311DB6 /* PODService.swift */; };
 		94D305C4299256D900311DB6 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C3299256D900311DB6 /* APIRouter.swift */; };
 		94D305C6299256EC00311DB6 /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C5299256EC00311DB6 /* RestAPIClient.swift */; };
+		94D305C929925FE100311DB6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C829925FE100311DB6 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		94D305C12992561F00311DB6 /* PODService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODService.swift; sourceTree = "<group>"; };
 		94D305C3299256D900311DB6 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		94D305C5299256EC00311DB6 /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
+		94D305C829925FE100311DB6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				94D305B7299254DB00311DB6 /* Screen */,
+				94D305C729925FD000311DB6 /* Utils */,
 				94D305B9299254F100311DB6 /* Network */,
 				94D305BA2992551500311DB6 /* Service */,
 				94D305BB2992551C00311DB6 /* Persistence */,
@@ -136,6 +139,14 @@
 				94D305AD2992545800311DB6 /* LaunchScreen.storyboard */,
 			);
 			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		94D305C729925FD000311DB6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				94D305C829925FE100311DB6 /* Observable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 				94D305BD2992557800311DB6 /* PODViewModel.swift in Sources */,
 				94D305A72992545600311DB6 /* PODViewController.swift in Sources */,
 				94D305BF2992558500311DB6 /* PODModel.swift in Sources */,
+				94D305C929925FE100311DB6 /* Observable.swift in Sources */,
 				94D305A32992545600311DB6 /* AppDelegate.swift in Sources */,
 				94D305C6299256EC00311DB6 /* RestAPIClient.swift in Sources */,
 				94D305A52992545600311DB6 /* SceneDelegate.swift in Sources */,
