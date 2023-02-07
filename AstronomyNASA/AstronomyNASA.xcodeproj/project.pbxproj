@@ -21,6 +21,7 @@
 		94D305C929925FE100311DB6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C829925FE100311DB6 /* Observable.swift */; };
 		94D305CC299268A400311DB6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305CB299268A400311DB6 /* NetworkManager.swift */; };
 		94D305CE29926B2F00311DB6 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305CD29926B2F00311DB6 /* PersistenceManager.swift */; };
+		94D305D0299271FB00311DB6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305CF299271FB00311DB6 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		94D305C829925FE100311DB6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		94D305CB299268A400311DB6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		94D305CD29926B2F00311DB6 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		94D305CF299271FB00311DB6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				94D305C829925FE100311DB6 /* Observable.swift */,
+				94D305CF299271FB00311DB6 /* Helper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				94D305A52992545600311DB6 /* SceneDelegate.swift in Sources */,
 				94D305CE29926B2F00311DB6 /* PersistenceManager.swift in Sources */,
 				94D305C22992561F00311DB6 /* PODService.swift in Sources */,
+				94D305D0299271FB00311DB6 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

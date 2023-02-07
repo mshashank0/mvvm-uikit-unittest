@@ -15,6 +15,7 @@ class PODViewModel: NSObject {
     
     var pod: Observable<Pod> = Observable(nil)
     var imageData: Observable<Data> = Observable(nil)
+    var isOldPicture: Observable<Bool> = Observable(false)
     
     // Injecting dependencies - service, network manager & persstence manager
     init(podService: PODServiceDelegate = PODService(),
@@ -25,17 +26,33 @@ class PODViewModel: NSObject {
         self.networkManager = networkManager
     }
     
+    // MARK: - Get picture of day
+    /*
+     1. Check for pod model and image data into the local persistence storage
+     2. If not found call api
+     3. Check if date stored in local store is same as today's date or internet is not connected then show saved picture from store
+     4. If date is not same and internet is connected, then call api
+     5. Set observables' value
+     */
     func getPictureOfDay() {
-        // Check for pod model and image data into the local persistence storage
+        // #1
         guard let pod = persistenceManager.getValue(Pod.self, for: EntityKey.pod.rawValue),
               let imageData = persistenceManager.getValue(Data.self, for: EntityKey.imageData.rawValue) else {
-           // If not found, get it from API call
+           // #2
            callServiceToGetThePictureOfDay()
            return
         }
-        // If found, return objects from the local persistence storage
+        // #3
+        guard pod.date.isSameAsToday() ||
+            !networkManager.isConnected() else {
+            // #4
+            callServiceToGetThePictureOfDay()
+            return
+        }
+        // #5
         self.pod.value = pod
         self.imageData.value = imageData
+        isOldPicture.value = !pod.date.isSameAsToday()
     }
     
     // Get picture of day object from server
