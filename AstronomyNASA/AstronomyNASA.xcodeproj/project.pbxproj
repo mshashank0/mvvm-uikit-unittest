@@ -16,6 +16,8 @@
 		94D305BD2992557800311DB6 /* PODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305BC2992557800311DB6 /* PODViewModel.swift */; };
 		94D305BF2992558500311DB6 /* PODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305BE2992558500311DB6 /* PODModel.swift */; };
 		94D305C22992561F00311DB6 /* PODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C12992561F00311DB6 /* PODService.swift */; };
+		94D305C4299256D900311DB6 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C3299256D900311DB6 /* APIRouter.swift */; };
+		94D305C6299256EC00311DB6 /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C5299256EC00311DB6 /* RestAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		94D305BC2992557800311DB6 /* PODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODViewModel.swift; sourceTree = "<group>"; };
 		94D305BE2992558500311DB6 /* PODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODModel.swift; sourceTree = "<group>"; };
 		94D305C12992561F00311DB6 /* PODService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODService.swift; sourceTree = "<group>"; };
+		94D305C3299256D900311DB6 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		94D305C5299256EC00311DB6 /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 		94D305B9299254F100311DB6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				94D305C3299256D900311DB6 /* APIRouter.swift */,
+				94D305C5299256EC00311DB6 /* RestAPIClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -203,10 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D305C4299256D900311DB6 /* APIRouter.swift in Sources */,
 				94D305BD2992557800311DB6 /* PODViewModel.swift in Sources */,
 				94D305A72992545600311DB6 /* PODViewController.swift in Sources */,
 				94D305BF2992558500311DB6 /* PODModel.swift in Sources */,
 				94D305A32992545600311DB6 /* AppDelegate.swift in Sources */,
+				94D305C6299256EC00311DB6 /* RestAPIClient.swift in Sources */,
 				94D305A52992545600311DB6 /* SceneDelegate.swift in Sources */,
 				94D305C22992561F00311DB6 /* PODService.swift in Sources */,
 			);
