@@ -8,7 +8,7 @@
 import Foundation
 
 class Helper {
-    static func readLocalPictureOfDay() -> Data? {
+    static func readLocalFile(_ name: String, with extension: String) -> Data? {
         guard let fileUrl = Bundle.main.url(forResource: "podMockResponse", withExtension: "json") else {
             return nil
         }

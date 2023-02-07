@@ -27,6 +27,8 @@
 		94D305E229927A6F00311DB6 /* podMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D305E029927A6F00311DB6 /* podMockResponse.json */; };
 		94D305E429927A8300311DB6 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305E329927A8300311DB6 /* MockURLProtocol.swift */; };
 		94D305E629927B2700311DB6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305E529927B2700311DB6 /* Helper.swift */; };
+		94D305E8299281B000311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94D305E7299281B000311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg */; };
+		94D305E9299281D600311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94D305E7299281B000311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		94D305E029927A6F00311DB6 /* podMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = podMockResponse.json; sourceTree = "<group>"; };
 		94D305E329927A8300311DB6 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		94D305E529927B2700311DB6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		94D305E7299281B000311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ZtfDippersB_Horalek_960_annotated.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,7 @@
 		94D305DF29927A3600311DB6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				94D305E7299281B000311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg */,
 				94D305E029927A6F00311DB6 /* podMockResponse.json */,
 			);
 			path = Data;
@@ -303,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D305E9299281D600311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg in Resources */,
 				94D305AF2992545800311DB6 /* LaunchScreen.storyboard in Resources */,
 				94D305AC2992545800311DB6 /* Assets.xcassets in Resources */,
 				94D305E129927A6F00311DB6 /* podMockResponse.json in Resources */,
@@ -315,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D305E229927A6F00311DB6 /* podMockResponse.json in Resources */,
+				94D305E8299281B000311DB6 /* ZtfDippersB_Horalek_960_annotated.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

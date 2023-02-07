@@ -27,7 +27,7 @@ final class NasaTests: XCTestCase {
     func testGetPod() throws {
         
         // Set mock pod data
-        guard let data = Helper.readLocalPictureOfDay() else {
+        guard let data = Helper.readLocalFile("podMockResponse", with: "json") else {
             XCTFail("No local data found")
             return
         }
@@ -48,6 +48,39 @@ final class NasaTests: XCTestCase {
                 XCTFail(error.localizedDescription)
             }
         }
+        wait(for: [expectation], timeout: 1)
+    }
+    
+    func testGetImageData() throws {
+       
+        // Set mock image data
+        guard let data = Helper.readLocalFile("ZtfDippersB_Horalek_960_annotated", with: "jpg") else {
+            XCTFail("No local data found")
+            return
+        }
+        // Return image data in mock request handler
+        MockURLProtocol.requestHandler = { request in
+            return (HTTPURLResponse(), data)
+        }
+        
+        let expectation = XCTestExpectation(description: "image data response")
+        
+        guard let fileUrl = Bundle.main.url(forResource: "ZtfDippersB_Horalek_960_annotated", withExtension: "jpg")?.absoluteString else {
+            XCTFail("No mocked image found")
+            return
+        }
+        
+        // Make mock network request to get imagedata
+        PODService(apiClient: apiClient).getImageData(from: fileUrl) { result in
+            switch result {
+            case .success(let imageData):
+                XCTAssertNotNil(imageData)
+                expectation.fulfill()
+            case .failure(let error):
+                XCTFail(error.localizedDescription)
+            }
+        }
+        
         wait(for: [expectation], timeout: 1)
     }
 }
