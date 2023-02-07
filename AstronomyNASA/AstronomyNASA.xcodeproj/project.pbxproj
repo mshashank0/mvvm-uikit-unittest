@@ -19,6 +19,7 @@
 		94D305C4299256D900311DB6 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C3299256D900311DB6 /* APIRouter.swift */; };
 		94D305C6299256EC00311DB6 /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C5299256EC00311DB6 /* RestAPIClient.swift */; };
 		94D305C929925FE100311DB6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305C829925FE100311DB6 /* Observable.swift */; };
+		94D305CC299268A400311DB6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D305CB299268A400311DB6 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		94D305C3299256D900311DB6 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		94D305C5299256EC00311DB6 /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
 		94D305C829925FE100311DB6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		94D305CB299268A400311DB6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		94D305B9299254F100311DB6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				94D305CA2992689200311DB6 /* Utils */,
 				94D305C3299256D900311DB6 /* APIRouter.swift */,
 				94D305C5299256EC00311DB6 /* RestAPIClient.swift */,
 			);
@@ -145,6 +148,14 @@
 			isa = PBXGroup;
 			children = (
 				94D305C829925FE100311DB6 /* Observable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		94D305CA2992689200311DB6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				94D305CB299268A400311DB6 /* NetworkManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -222,6 +233,7 @@
 			files = (
 				94D305C4299256D900311DB6 /* APIRouter.swift in Sources */,
 				94D305BD2992557800311DB6 /* PODViewModel.swift in Sources */,
+				94D305CC299268A400311DB6 /* NetworkManager.swift in Sources */,
 				94D305A72992545600311DB6 /* PODViewController.swift in Sources */,
 				94D305BF2992558500311DB6 /* PODModel.swift in Sources */,
 				94D305C929925FE100311DB6 /* Observable.swift in Sources */,
