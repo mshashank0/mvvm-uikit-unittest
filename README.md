@@ -18,6 +18,6 @@ Trade-offs
 1. Persistence Store Manager can get extended with CoreData and image can be stored in document directory(separate manager). As in future, we can have a different story with lots of images and data
 2. More Unit test cases should be added
 3. For enums and protocols different classes can be created
-4. XCconfig file can get created for baseurl and key
+4. XCconfig file can get created for baseurl and api_key
 5. Error cases should be handled gracefully with alert or toast messages
 6. Code refactoring can be done for few of classes 
