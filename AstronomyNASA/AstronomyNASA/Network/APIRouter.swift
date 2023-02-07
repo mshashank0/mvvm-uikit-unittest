@@ -11,7 +11,7 @@ import Foundation
 let baseUrl = "https://api.nasa.gov"
 
 // TODO: - Improvement - Move it to configuration file and add it to .gitignore file
-let pocKey = "dGCtgaTDSgoYtYqNQrwGYkHaOD0yMrNMqiaB5jHW"
+let pocKey = "fr33zGyZgRPrj5hl9pn8UaKLqE7m74OQbxyotfQH"
 
 enum Method: String {
     case get = "GET"
