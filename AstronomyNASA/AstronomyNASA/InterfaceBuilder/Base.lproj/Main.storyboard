@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uxA-A9-AbX">
-                                <rect key="frame" x="12" y="59" width="369" height="759"/>
+                                <rect key="frame" x="12" y="59" width="369" height="719"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAI-Hy-mdi">
-                                        <rect key="frame" x="0.0" y="0.0" width="369" height="531.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="369" height="503.33333333333331"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-ED-JzY">
-                                        <rect key="frame" x="0.0" y="531.33333333333337" width="369" height="76"/>
+                                        <rect key="frame" x="0.0" y="503.33333333333337" width="369" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OW3-za-Bk5">
-                                        <rect key="frame" x="0.0" y="607.33333333333337" width="369" height="151.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="575.33333333333337" width="369" height="143.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -43,18 +43,31 @@
                                     <constraint firstItem="fFK-ED-JzY" firstAttribute="height" secondItem="uxA-A9-AbX" secondAttribute="height" multiplier="0.1" id="i45-oy-GZ2"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note - We are not connected to the internet, showing you the last image we have." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14I-2k-vFj">
+                                <rect key="frame" x="12" y="780" width="369" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="9yO-DY-0YZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.3294117647" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZET-67-vL9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uxA-A9-AbX" firstAttribute="top" secondItem="ZET-67-vL9" secondAttribute="top" id="CLM-fg-yMu"/>
-                            <constraint firstItem="ZET-67-vL9" firstAttribute="bottom" secondItem="uxA-A9-AbX" secondAttribute="bottom" id="P8G-qH-6Km"/>
+                            <constraint firstItem="14I-2k-vFj" firstAttribute="top" secondItem="uxA-A9-AbX" secondAttribute="bottom" constant="2" id="G1C-d0-SdP"/>
+                            <constraint firstItem="ZET-67-vL9" firstAttribute="trailing" secondItem="14I-2k-vFj" secondAttribute="trailing" constant="12" id="I3X-bg-gB8"/>
+                            <constraint firstItem="ZET-67-vL9" firstAttribute="bottom" secondItem="14I-2k-vFj" secondAttribute="bottom" id="Tr4-bG-GlM"/>
+                            <constraint firstItem="uxA-A9-AbX" firstAttribute="top" secondItem="ZET-67-vL9" secondAttribute="top" id="YhQ-AV-riz"/>
                             <constraint firstItem="ZET-67-vL9" firstAttribute="trailing" secondItem="uxA-A9-AbX" secondAttribute="trailing" constant="12" id="q3U-bv-MNl"/>
+                            <constraint firstItem="14I-2k-vFj" firstAttribute="leading" secondItem="ZET-67-vL9" secondAttribute="leading" constant="12" id="vHT-tf-QLM"/>
                             <constraint firstItem="uxA-A9-AbX" firstAttribute="leading" secondItem="ZET-67-vL9" secondAttribute="leading" constant="12" id="yC9-nL-2NE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="OW3-za-Bk5" id="VHu-Yj-VPM"/>
+                        <outlet property="errorLabel" destination="14I-2k-vFj" id="OfH-rP-k7F"/>
                         <outlet property="imageView" destination="cAI-Hy-mdi" id="eTc-ZP-a6k"/>
                         <outlet property="titleLabel" destination="fFK-ED-JzY" id="7oR-Vs-J3d"/>
                     </connections>
