@@ -10,7 +10,7 @@ Approach -
 
 ######
 
-Improvement Areas - All four acceptance criterias has been covered
+Improvement Areas - All four acceptance criterias have been covered
 
 ######
 
